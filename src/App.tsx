@@ -3,6 +3,7 @@ import './App.css'
 import Benefits from './scenes/benefits';
 import Home from './scenes/home';
 import Navbar from './scenes/navbar'
+import OurClasses from './scenes/ourClasses';
 import { SelectedPage } from './shared/types';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <Home setSelectedPage={setSelectedPage}/>
       <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage} />
     </div>
   )
 }
